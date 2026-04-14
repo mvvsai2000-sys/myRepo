@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+    height: 10000px;
+}
+
+.banner {
+    height: 50px;
+    width: 100%;
+    background: rgb(53, 184, 190);
+}
+
+.banner>h5 {
+    color: rgb(212, 241, 242);
+    text-align: center;
+    position: relative;
+    top: 18px;
+}
+
+.banner-span {
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    width: 60%;
+    margin: 20px auto;
+    left: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    font-size: 1.2rem;
+    color: rgb(83, 78, 111);
+
+
+}
+
+.logo>h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20px;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 60px;
+    height: 60px;
+    width: 600px;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+li>a {
+    font-size: 1.2rem;
+    color: rgb(83, 78, 111);
+    background-image: linear-gradient(transparent 0%, transparent 90%, rgb(83, 78, 111) 90%, rgb(83, 78, 111) 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 300ms;
+}
+
+li> :hover {
+    color: rgb(53, 184, 190);
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.cart {
+    background: rgb(53, 184, 190);
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.span-cart>a {
+    display: flex;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 100px;
+    align-items: center;
+    height: 72px;
+    width: 25%;
+    position: relative;
+    left: 380px;
+
+}
+
+.box-bg {
+    width: 100%;
+}
+
+.boxes button {
+    font-size: 1.3rem;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(84, 98, 133);
+    border-radius: 10px;
+    width: 200px;
+    position: relative;
+    border: 0px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.boxes button.active {
+    color: white;
+}
+
+
+.active {
+    background: rgb(53, 184, 190);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.menu {
+    height: fit-content;
+    width: 95%;
+    background: rgb(245, 251, 252);
+    margin-top: 100px;
+    margin-left: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.items-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    ;
+    color: rgb(53, 184, 190);
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+.items {
+    height: 200px;
+    width: 460px;
+    display: flex;
+    background: white;
+    box-shadow: rgb(53, 184, 190) 0px 0px 1px 0px, rgb(53, 184, 190) 0px 0px 0px 0px;
+    border-radius: 10px;
+    margin: 50px 70px;
+}
+
+.img2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 150px;
+    width: 0%;
+    position: relative;
+    top: 30px;
+    right: 5px;
+
+}
+
+.span-cost {
+    position: relative;
+    right: 20px;
+    color: rgb(53, 184, 190);
+}
+
+.img2>img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+
+
+}
+
+.no-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input[type="number"] {
+    height: 29px;
+    width: 40px;
+    background: rgb(236, 235, 235);
+    border-radius: 4px;
+    border: 1px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.header>h4 {
+    font-size: 1.4rem;
+}
+
+.header>p {
+    color: rgb(84, 98, 133);
+
+}
+
+.menu-cart {
+    height: 25px;
+    padding: 4px 10px;
+    background: rgb(53, 184, 190);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.active2 {
+    color: rgb(53, 184, 190);
+    text-decoration: underline 2px solid rgb(84, 98, 133);
+}

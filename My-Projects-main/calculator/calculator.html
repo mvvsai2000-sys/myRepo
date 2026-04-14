@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLM Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./calc.j"></script>
+    
+</head>
+<body>
+    <h1>FLM Calculator</h1>
+
+    <section class="calculator">
+        
+        <div class="display"></div> 
+
+        <div class="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="black">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="black">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="black">*</div>    
+            <div class="red">AC</div>
+            <div>0</div>
+            <div class="black">=</div>  
+            <div class="black">/</div>  
+        </div>
+    </section>
+</body>
+<script>
+    let keys = document.querySelectorAll(".keyboard>div");
+let bag = "";
+
+
+for(let i=0; i<keys.length; i++){
+    keys[i].addEventListener("click", myCalculator);
+}
+
+function myCalculator(){
+    let targetNumber = event.target.innerText;
+
+    if(targetNumber == "AC"){
+        bag = "";
+        document.querySelector(".display").innerText = "";
+    }
+    else if(targetNumber == "="){
+        document.querySelector(".display").innerText = eval(bag);
+    }
+    else{
+        bag = bag + targetNumber;
+        document.querySelector(".display").innerText = bag;
+    }
+}
+</script>
+</html>
